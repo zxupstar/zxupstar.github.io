@@ -1,51 +1,107 @@
-<!DOCTYPE HTML>
+
+<!DOCTYPE html>
 <!--
 	Aerial by HTML5 UP
-	html5up.net | @ajlkn
+	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>I'm Zhang Star</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
-		<div id="wrapper">
-			<div id="bg"></div>
-			<div id="overlay"></div>
-			<div id="main">
 
-				<!-- Header -->
-					<header id="header">
-						<h1>I'm Zhang Star</h1>
-						<p>Language(Human Or Machine) &nbsp;&bull;&nbsp; ACMer &nbsp;&bull;&nbsp; Car&nbsp;&bull;&nbsp; Soccer &nbsp;&bull;&nbsp; Game(ggwp)&nbsp;&bull;&nbsp; 
-						
-						</p>
-						<nav>
-							<ul>
-								<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-								<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-								<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-							</ul>
-						</nav>
-					</header>
+<head>
+    <title>Welcome, I'm ZhangStar</title>
+    <meta charset="utf-8"/>
+    <link href="" rel="shortcut icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<span class="copyright">&copy; Untitled. Design By HTML5</a>.</span>
-					</footer>
+    <style type="text/css">
+        a {
+            position: relative;
+        }
 
-			</div>
-		</div>
-		<script>
-			window.onload = function() { document.body.classList.remove('is-preload'); }
-			window.ontouchmove = function() { return false; }
-			window.onorientationchange = function() { document.body.scrollTop = 0; }
-		</script>
-	</body>
+        a:hover:before {
+            position: absolute;
+            top: 20px;
+            right: 0;
+            content: attr(title);
+            color: #000000;
+            border: 1px solid #242424;
+            background-color: #E5E5E5;
+            font-family: "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+        }
+
+        body,
+        label,
+        span {
+            font-family: "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+        }
+    </style>
+    <script>
+        var targetProtocol = "https:";
+        if (window.location.protocol != targetProtocol)
+            window.location.href = targetProtocol +
+                window.location.href.substring(window.location.protocol.length);
+    </script>
+</head>
+
+<body class="loading">
+<div id="wrapper">
+    <div id="bg"></div>
+    <div id="overlay"></div>
+    <div id="main">
+        <header id="header">
+            <h1>I'm ZhangStar</h1>
+            <p>ACMer &nbsp;&bull;&nbsp; Car&nbsp;&bull;&nbsp; Soccer &nbsp;&bull;&nbsp; Game(ggwp)  &nbsp;&bull;&nbsp;  Language(Human Or Machine); 
+            <nav>
+                <ul>
+                    <li>
+                        <a href="https://www.cnblogs.com/upstart/" class="icon fa-newspaper-o" target="_blank" title="Blog">
+                            <span class="label">技术博客</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://github.com/zxupstar" class="icon fa-github" target="_blank" title="Git">
+                            <span class="label">Github</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.zhihu.com/people/kai-shuan-yao-leng-cang" class="icon fa-comment" target="_blank"
+                           title="知乎">
+                            <span class="label">知乎</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="icon fa-book" target="_blank"
+                           title="豆瓣">
+                            <span class="label">豆瓣</span>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </nav>
+        </header>
+        <footer id="footer">
+				<span class="copyright">© Untitled By ZhangStar. Design By HTML5. </span>
+        </footer>
+
+    </div>
+</div>
+<script>
+    window.onload = function () {
+        document.body.className = '';
+    };
+    window.ontouchmove = function () {
+        return false;
+    };
+    window.onorientationchange = function () {
+        document.body.scrollTop = 0;
+    }
+</script>
+<script>
+    var date = new Date;
+    var year = date.getFullYear();
+    document.getElementById("myYear").innerHTML = year.toString();
+</script>
+</body>
+
 </html>
