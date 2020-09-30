@@ -8,6 +8,7 @@ Minimal, responsive, and powered by Responsive Tools + Sass.
 Enjoy :)
 
 
+
 Credits:
 
 	Demo Images:
@@ -16,5 +17,5 @@ Credits:
 	Icons:
 		Font Awesome (fontawesome.io)
 
-	Responsive:
-		Responsive Tools (github.com/ajlkn/responsive-tools)
+	Responsive Tools:
+		responsive-tools (github.com/ajlkn/responsive-tools)
